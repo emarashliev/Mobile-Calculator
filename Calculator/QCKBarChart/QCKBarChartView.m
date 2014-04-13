@@ -35,6 +35,8 @@ static CGFloat valuePerUnit;
 {
     self.dataSource = dataSource;
     self.delegate = delegate;
+    
+    [self clearReusableViews];
 }
 
 - (NSMutableArray *)barViews
@@ -106,13 +108,17 @@ static CGFloat valuePerUnit;
     return barView;
 }
 
-//- (void)setBarChartValues:(NSArray *)barChartValues
-//{
-//    _barChartValues = barChartValues;
-//    while (self.barViews.count > barChartValues.count) {
-//        [self.barViews removeLastObject];
-//    }
-//}
+- (void)didTapOnBar:(QCKBarView *)bar
+{
+    [self.delegate barChartView:self didSelectBarView:bar];
+}
+
+- (void)clearReusableViews
+{
+    while (self.barViews.count > [self.dataSource numberOfBarsInBarChartView:self]) {
+        [self.barViews removeLastObject];
+    }
+}
 
 #pragma mark - Drawing
 - (void)drawRect:(CGRect)rect
@@ -178,9 +184,4 @@ static CGFloat valuePerUnit;
     [self setNeedsDisplay];
 }
 
-
-- (void)didTapOnBar:(QCKBarView *)bar
-{
-    [self.delegate barChartView:self didSelectBarView:bar];
-}
 @end

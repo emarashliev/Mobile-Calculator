@@ -22,6 +22,7 @@
 
 @protocol QCKBarChartDelegate <NSObject>
 
+@optional
 - (void)barChartView:(QCKBarChartView*)barChartView didSelectBarView:(QCKBarView *)barView;
 
 @end

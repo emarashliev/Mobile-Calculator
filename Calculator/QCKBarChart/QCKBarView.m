@@ -11,16 +11,8 @@
 @interface QCKBarView ()
 
 @end
-@implementation QCKBarView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
+@implementation QCKBarView
 
 - (void)setColor:(UIColor *)color
 {

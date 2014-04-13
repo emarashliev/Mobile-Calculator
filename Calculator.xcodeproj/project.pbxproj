@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		143446C818EB4F96009A78A4 /* QCKBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 143446C718EB4F96009A78A4 /* QCKBarChartView.m */; };
+		143446D218F15C37009A78A4 /* QCKBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 143446D118F15C37009A78A4 /* QCKBarView.m */; };
+		143446D818F165B2009A78A4 /* UIColor+QCKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 143446D718F165B2009A78A4 /* UIColor+QCKColor.m */; };
+		143446DB18F16701009A78A4 /* UIView+QCKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 143446DA18F16701009A78A4 /* UIView+QCKView.m */; };
 		1449679318E6045C00608D53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1449679218E6045C00608D53 /* Foundation.framework */; };
 		1449679518E6045C00608D53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1449679418E6045C00608D53 /* CoreGraphics.framework */; };
 		1449679718E6045C00608D53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1449679618E6045C00608D53 /* UIKit.framework */; };
@@ -22,7 +25,6 @@
 		144967B418E6045C00608D53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1449679618E6045C00608D53 /* UIKit.framework */; };
 		144967BC18E6045C00608D53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 144967BA18E6045C00608D53 /* InfoPlist.strings */; };
 		144967BE18E6045C00608D53 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 144967BD18E6045C00608D53 /* CalculatorTests.m */; };
-		B331393118EF40A800844CAE /* QCKBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B331393018EF40A800844CAE /* QCKBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,12 @@
 /* Begin PBXFileReference section */
 		143446C618EB4F96009A78A4 /* QCKBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCKBarChartView.h; path = QCKBarChart/QCKBarChartView.h; sourceTree = "<group>"; };
 		143446C718EB4F96009A78A4 /* QCKBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCKBarChartView.m; path = QCKBarChart/QCKBarChartView.m; sourceTree = "<group>"; };
+		143446D018F15C37009A78A4 /* QCKBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCKBarView.h; path = QCKBarChart/QCKBarView.h; sourceTree = "<group>"; };
+		143446D118F15C37009A78A4 /* QCKBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCKBarView.m; path = QCKBarChart/QCKBarView.m; sourceTree = "<group>"; };
+		143446D618F165B2009A78A4 /* UIColor+QCKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+QCKColor.h"; path = "Helpers/UIColor+QCKColor.h"; sourceTree = "<group>"; };
+		143446D718F165B2009A78A4 /* UIColor+QCKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+QCKColor.m"; path = "Helpers/UIColor+QCKColor.m"; sourceTree = "<group>"; };
+		143446D918F16701009A78A4 /* UIView+QCKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+QCKView.h"; path = "Helpers/UIView+QCKView.h"; sourceTree = "<group>"; };
+		143446DA18F16701009A78A4 /* UIView+QCKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+QCKView.m"; path = "Helpers/UIView+QCKView.m"; sourceTree = "<group>"; };
 		1449678F18E6045C00608D53 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1449679218E6045C00608D53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1449679418E6045C00608D53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,8 +65,6 @@
 		144967B918E6045C00608D53 /* CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		144967BB18E6045C00608D53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		144967BD18E6045C00608D53 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
-		B331392F18EF40A800844CAE /* QCKBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCKBarView.h; sourceTree = "<group>"; };
-		B331393018EF40A800844CAE /* QCKBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCKBarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +96,21 @@
 			children = (
 				143446C618EB4F96009A78A4 /* QCKBarChartView.h */,
 				143446C718EB4F96009A78A4 /* QCKBarChartView.m */,
-				B331392F18EF40A800844CAE /* QCKBarView.h */,
-				B331393018EF40A800844CAE /* QCKBarView.m */,
+				143446D018F15C37009A78A4 /* QCKBarView.h */,
+				143446D118F15C37009A78A4 /* QCKBarView.m */,
 			);
 			name = QCKBarChart;
+			sourceTree = "<group>";
+		};
+		143446CF18F15BE7009A78A4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				143446D618F165B2009A78A4 /* UIColor+QCKColor.h */,
+				143446D718F165B2009A78A4 /* UIColor+QCKColor.m */,
+				143446D918F16701009A78A4 /* UIView+QCKView.h */,
+				143446DA18F16701009A78A4 /* UIView+QCKView.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		1449678618E6045C00608D53 = {
@@ -130,9 +147,10 @@
 			isa = PBXGroup;
 			children = (
 				144967A418E6045C00608D53 /* Main.storyboard */,
-				143446C518EB4F5E009A78A4 /* QCKBarChart */,
 				144967A118E6045C00608D53 /* QCKAppDelegate.h */,
 				144967A218E6045C00608D53 /* QCKAppDelegate.m */,
+				143446CF18F15BE7009A78A4 /* Helpers */,
+				143446C518EB4F5E009A78A4 /* QCKBarChart */,
 				144967A718E6045C00608D53 /* QCKViewController.h */,
 				144967A818E6045C00608D53 /* QCKViewController.m */,
 				144967AA18E6045C00608D53 /* Images.xcassets */,
@@ -268,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B331393118EF40A800844CAE /* QCKBarView.m in Sources */,
 				144967A318E6045C00608D53 /* QCKAppDelegate.m in Sources */,
+				143446DB18F16701009A78A4 /* UIView+QCKView.m in Sources */,
+				143446D818F165B2009A78A4 /* UIColor+QCKColor.m in Sources */,
+				143446D218F15C37009A78A4 /* QCKBarView.m in Sources */,
 				143446C818EB4F96009A78A4 /* QCKBarChartView.m in Sources */,
 				1449679F18E6045C00608D53 /* main.m in Sources */,
 				144967A918E6045C00608D53 /* QCKViewController.m in Sources */,
